@@ -53,10 +53,7 @@ def status():
         "hostname": socket.gethostname(),
         "version": VERSION
     })
-@app.route("api/secret")
-def api_secret_redirect():
-    return redirect("/api/v1/secret", code=302)
-
+@app.route("/api/secret")
 @app.route("/api/v1/secret")
 def secret():
     provided_key = request.headers.get("X-API-Key")
