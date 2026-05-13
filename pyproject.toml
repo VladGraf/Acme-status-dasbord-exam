@@ -1,0 +1,13 @@
+[tool.poetry]
+name = "status-dashboard"
+version = "1.0.0"
+description = "Internal status dashboard service"
+authors = ["Vladimir"]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+flask = "3.0.3"
+
+[build-system]
+requires = ["poetry-core==1.9.0"]
+build-backend = "poetry.core.masonry.api"
