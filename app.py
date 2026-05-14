@@ -53,9 +53,7 @@ def status():
         "hostname": socket.gethostname(),
         "version": VERSION
     })
-feat/dockerfile
 
-main
 @app.route("/api/secret")
 @app.route("/api/v1/secret")
 def secret():
