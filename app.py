@@ -43,9 +43,6 @@ def index():
     return render_template_string(HTML)
 
 @app.route("/api/status")
-def api_status_redirect():
-    return redirect("/api/v1/status", code=302)
-
 @app.route("/api/v1/status")
 def status():
     return jsonify({
