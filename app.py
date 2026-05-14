@@ -53,6 +53,9 @@ def status():
         "hostname": socket.gethostname(),
         "version": VERSION
     })
+feat/dockerfile
+
+main
 @app.route("/api/secret")
 @app.route("/api/v1/secret")
 def secret():
@@ -64,5 +67,5 @@ def secret():
     return jsonify({"message": "you found the secret"})
 
 if __name__ == "__main__":
-    app.run(host="127.0.0.1", port=PORT)
+    app.run(host="0.0.0.0", port=PORT)
 
